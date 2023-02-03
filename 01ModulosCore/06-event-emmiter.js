@@ -12,5 +12,5 @@ pub
 
 pub.emit('myevent', 'Soy un emisor de eventos')
 pub.emit('myevent', 'Volviendo a emitir')
-pub.removeAllListeners('myevent')
+//pub.removeAllListeners('myevent')
 pub.emit('myevent', 'Volviendo a emitir por tercera vez')

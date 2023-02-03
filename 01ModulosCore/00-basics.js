@@ -8,3 +8,4 @@ console.log(2 + 5)
 setInterval(function (){
    console.log('Hola Node.js')
 }, 1000)
+//Ctrl + C detengo la ejecución de un script en la consola

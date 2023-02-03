@@ -29,3 +29,13 @@ for ( var i = 0; i < buf2.length; i++ )
 }
 
 console.log( buf2.toString('ascii') )
+
+
+
+
+
+
+
+
+
+

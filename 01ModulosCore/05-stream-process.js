@@ -1,31 +1,34 @@
 var stdin = process.stdin,
-   stdout = process.stdout,
-   person = {
-       name : null,
-       age : 0
-   }
+stdout = process.stdout,
+person = {
+    name : null,
+    age : 0
+}
 
-   function saveAge(age)
-   {
-       person.age = age
-       if( person.age >= 18 )
-       {
-           stdout.write( person.name + ' es mayor de edad, tiene ' + person.age + ' años\n' )
-       }
-       else
-       {
-           stdout.write( person.name + ' es menor de edad, tiene ' + person.age + ' años\n' )
-       }
-       process.exit()
-   }
+function saveAge(age)
+{
+    person.age = age
+    if( person.age >= 18 )
+    {
+        stdout.write( person.name + ' es mayor de edad, tiene ' + person.age + ' años\n' )
+    }
+    else
+    {
+        stdout.write( person.name + ' es menor de edad, tiene ' + person.age + ' años\n' )
+    }
+    process.exit()
+}
 
-function saveName(name){
+
+function saveName(name)
+{
     person.name = name
     // Vuelvo a preguntar
     var question = 'Hola ' + person.name + ' ¿Cuántos años tienes?'
    
     quiz(question, saveAge)
 }
+
 
 function quiz(question, callback)
 {
@@ -39,4 +42,5 @@ function quiz(question, callback)
 
 
 stdin.setEncoding('utf8');
-quiz('¿Como te llamas? ', saveName);
+quiz('¿Como te llamas?', saveName);
+
