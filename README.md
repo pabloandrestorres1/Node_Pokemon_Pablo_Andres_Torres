@@ -6,6 +6,7 @@ Entre las nuevas funcionalidades que he implementado encontramos un nuevo aparta
 .env
 
 /*
+
 PORT=4000
 
 DB_USER=cursonode
